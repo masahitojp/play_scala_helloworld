@@ -1,4 +1,10 @@
+@()(implicit flash:play.mvc.Scope.Flash)
 
+@if(flash.get("error")) {
+    <p style="color:#c00">
+        @flash.get("error")
+    </p>
+}
 
 @main(title = "Home") {
     <form action="@action(controllers.Application.sayHello)" method="GET">
