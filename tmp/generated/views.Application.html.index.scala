@@ -7,16 +7,17 @@
 
                     object index extends BaseScalaTemplate[Html,Format[Html]](HtmlFormat) {
 
-                        def apply/*1.2*/(title:String):Html = {
+                        def apply():Html = {
                             try {
                                 _display_ {
 
-format.raw/*1.16*/("""
+format.raw/*1.1*/("""
 
-""")+_display_(/*3.2*/main(title)/*3.13*/ {format.raw/*3.15*/("""
-    
-    """)+_display_(/*5.6*/views/*5.11*/.defaults.html.welcome(title))+format.raw/*5.40*/("""
-    
+""")+_display_(/*3.2*/main(title = "Home")/*3.22*/ {format.raw/*3.24*/("""
+    <form action="""")+_display_(/*4.20*/action(controllers.Application.sayHello))+format.raw/*4.60*/("""" method="GET">
+        <input type="text" name="myName" />
+        <input type="submit" value="Say hello!" />
+    </form>
 """)})}
                             } catch {
                                 case e:TemplateExecutionError => throw e
@@ -29,11 +30,11 @@ format.raw/*1.16*/("""
                 
                 /*
                     -- GENERATED --
-                    DATE: Tue Aug 09 22:39:06 JST 2011
+                    DATE: Wed Aug 10 00:34:08 JST 2011
                     SOURCE: /app/views/Application/index.scala.html
-                    HASH: eb312fa4c0e2ba372510dd9e61b53637a774196f
-                    MATRIX: 329->1|450->15|478->18|497->29|517->31|553->42|566->47|615->76
-                    LINES: 10->1|14->1|16->3|16->3|16->3|18->5|18->5|18->5
+                    HASH: 6b3c311a82be9010b76cb8cba02cc7319c1ba69d
+                    MATRIX: 430->0|458->3|486->23|506->25|552->45|612->85
+                    LINES: 14->1|16->3|16->3|16->3|17->4|17->4
                     -- GENERATED --
                 */
             
