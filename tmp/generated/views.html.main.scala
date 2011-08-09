@@ -22,7 +22,9 @@ format.raw/*1.36*/("""
         <script src="""")+_display_(/*9.23*/asset("public/javascripts/jquery-1.5.2.min.js"))+format.raw/*9.70*/("""" type="text/javascript"></script>
     </head>
     <body>
-        """)+_display_(/*12.10*/body)+format.raw/*12.14*/("""
+        The Hello world app.
+            <hr/>
+        """)+_display_(/*14.10*/body)+format.raw/*14.14*/("""
     </body>
 </html>
 """)}
@@ -37,11 +39,11 @@ format.raw/*1.36*/("""
                 
                 /*
                     -- GENERATED --
-                    DATE: Tue Aug 09 22:39:06 JST 2011
+                    DATE: Wed Aug 10 00:43:49 JST 2011
                     SOURCE: /app/views/main.scala.html
-                    HASH: f57cd985497055be1b86e89054363af7a68861ce
-                    MATRIX: 316->1|457->35|535->87|560->92|648->154|704->190|791->251|845->285|896->310|963->357|1057->424|1082->428
-                    LINES: 10->1|14->1|19->6|19->6|20->7|20->7|21->8|21->8|22->9|22->9|25->12|25->12
+                    HASH: e165e55d08bfde7d411e8cd89217eaadd36127c4
+                    MATRIX: 316->1|457->35|535->87|560->92|648->154|704->190|791->251|845->285|896->310|963->357|1104->471|1129->475
+                    LINES: 10->1|14->1|19->6|19->6|20->7|20->7|21->8|21->8|22->9|22->9|27->14|27->14
                     -- GENERATED --
                 */
             
